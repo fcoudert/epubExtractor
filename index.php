@@ -1,10 +1,10 @@
 <?php
 
-require ('EpubReader.php');
+require ('EpubExtractor.php');
 
 $myEpub='ebook.epub'; 
-EpubReader::setFileName($myEpub); //first set the filename
-$infos= EpubReader::extractInfo(); //then get all informations
+EpubExtractor::setFileName($myEpub); //first set the filename
+$infos= EpubExtractor::extractInfo(); //then get all informations
 
 echo $infos['title'].'<br>';
 echo $infos['language'].'<br>';
